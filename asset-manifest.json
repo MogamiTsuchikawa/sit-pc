@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/sit-pc/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/sit-pc/static/js/main.11fd6551.chunk.js",
-    "main.js.map": "/sit-pc/static/js/main.11fd6551.chunk.js.map",
+    "main.js": "/sit-pc/static/js/main.1cfade91.chunk.js",
+    "main.js.map": "/sit-pc/static/js/main.1cfade91.chunk.js.map",
     "runtime-main.js": "/sit-pc/static/js/runtime-main.77c45caf.js",
     "runtime-main.js.map": "/sit-pc/static/js/runtime-main.77c45caf.js.map",
     "static/js/2.a686f8d1.chunk.js": "/sit-pc/static/js/2.a686f8d1.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.77c45caf.js",
     "static/js/2.a686f8d1.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.11fd6551.chunk.js"
+    "static/js/main.1cfade91.chunk.js"
   ]
 }
