@@ -22,8 +22,8 @@ const PCSpecTable: React.FC<Props> = (props) => {
       </thead>
       <tbody>
         {props.jsonObj.map((tmp:PCSpec)=>(
-        <tr>
-          <td>{tmp.name}</td>
+        <tr className={tmp.kind == props.kind ? "table-success" : ""}>
+          <td><a href={"https://mogami.dev/sit-pc?kind="+tmp.kind}>{tmp.name}</a></td>
           {tmp.display==-1 
           ?
           <td>指定無し</td>
@@ -38,8 +38,18 @@ const PCSpecTable: React.FC<Props> = (props) => {
           <td>{tmp.os}</td>
           <td>{tmp.cpu}以上</td>
           <td>{tmp.ram}GB以上</td>
+          {tmp.ssd != -1
+          ?
           <td>{tmp.ssd}GB以上</td>
+          :
+          <td>指定無し</td>
+          }
+          {tmp.weight != -1
+          ?
           <td>{tmp.weight}kg以下</td>
+          :
+          <td>指定無し</td>
+          }
           <td>WiFi{tmp.wifi}以上</td>
           <td>{tmp.intel_mac ? 
           <div>
@@ -61,6 +71,7 @@ const PCSpecTable: React.FC<Props> = (props) => {
 }
 type Props = {
   jsonObj: PCSpec[];
+  kind: string;
 };
 
 export default PCSpecTable;

@@ -4,9 +4,22 @@ import PCSpecTable from './comp/pc-spec-table';
 import { PCSpec } from './common';
 function App() {
   const [pcspec, setPcspec] = useState<PCSpec[]>([]);
+  const [kind,setKind] = useState("");
   useEffect(() => {
     const jsonObj = require('./json/pc-spec.json');
     setPcspec(jsonObj);
+    let urlParamStr = window.location.search;
+    if (urlParamStr) {
+      //?を除去
+      urlParamStr = urlParamStr.substring(1);
+      //urlパラメータをオブジェクトにまとめる
+      urlParamStr.split('&').forEach( param => {
+        const temp = param.split('=')
+        if(temp[0] === 'kind'){
+          setKind(temp[1].substring(0,1));
+        }
+      });
+    }
   }, [])
   return (
     <div>
@@ -36,7 +49,7 @@ function App() {
             </Accordion.Toggle>
             <br/>
             <Accordion.Collapse eventKey="0">
-              <PCSpecTable jsonObj={require('./json/pc-spec.json')} />
+              <PCSpecTable jsonObj={require('./json/pc-spec.json')} kind={kind} />
             </Accordion.Collapse>
           </Accordion>
         </Row>
