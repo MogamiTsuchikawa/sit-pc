@@ -1,0 +1,15 @@
+[
+    {"name":"機械工","kind":"a","display":-1,"os":"Win10","cpu":"2.5GHz","ram":16,"ssd":256,"weight":1.5,"wifi":5,"intel_mac":false,"m1_mac":false},
+    {"name":"機械機能工","kind":"b","display":-1,"os":"Win10","cpu":"i5","ram":8,"ssd":256,"weight":1.5,"wifi":5,"intel_mac":true,"m1_mac":false},
+    {"name":"材料工","kind":"c","display":-2,"os":"Win10","cpu":"i5","ram":16,"ssd":-1,"weight":-1,"wifi":5,"intel_mac":true,"m1_mac":true},
+    {"name":"応用化学","kind":"d","display":-1,"os":"Win10","cpu":"i5","ram":16,"ssd":256,"weight":1.5,"wifi":5,"intel_mac":true,"m1_mac":false},
+    {"name":"電気工","kind":"e","display":-1,"os":"Win10","cpu":"i5","ram":16,"ssd":256,"weight":1.5,"wifi":5,"intel_mac":true,"m1_mac":false},
+    {"name":"電子工","kind":"g","display":12,"os":"Win10","cpu":"4core","ram":8,"ssd":128,"weight":1.5,"wifi":5,"intel_mac":true,"m1_mac":false},
+    {"name":"通信工","kind":"f","display":13,"os":"Win10","cpu":"i5","ram":16,"ssd":256,"weight":1.5,"wifi":5,"intel_mac":false,"m1_mac":false},
+    {"name":"情報工","kind":"l","display":-1,"os":"Win10","cpu":"i5","ram":16,"ssd":256,"weight":1.5,"wifi":5,"intel_mac":true,"m1_mac":false},
+    {"name":"土木工","kind":"h","display":13,"os":"Win10&MacOS","cpu":"i5","ram":16,"ssd":256,"weight":2,"wifi":5,"intel_mac":true,"m1_mac":true},
+    {"name":"電情","kind":"p","display":-1,"os":"Win10","cpu":"i5","ram":8,"ssd":256,"weight":1.5,"wifi":5,"intel_mac":true,"m1_mac":false},
+    {"name":"機械制御","kind":"q","display":13,"os":"Win10","cpu":"i5","ram":8,"ssd":256,"weight":1.5,"wifi":5,"intel_mac":false,"m1_mac":false},
+    {"name":"生命","kind":"n","display":-1,"os":"Win10","cpu":"i5","ram":8,"ssd":256,"weight":1.5,"wifi":5,"intel_mac":false,"m1_mac":false},
+    {"name":"数理","kind":"v","display":12,"os":"Win10","cpu":"i5","ram":16,"ssd":128,"weight":1.5,"wifi":5,"intel_mac":true,"m1_mac":false}
+]
